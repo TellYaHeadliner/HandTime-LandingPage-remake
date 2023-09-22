@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --8019c8: #8019c8;
+  --font-family-san-serif: "san-serif";
+  --font-family-monospace: "monospace";
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+header .icon {
+  display: none;
+}
+
+.header__lists {
+  display: flex;
+  margin: auto;
+}
+.header__lists ul a {
+  padding: 5px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.header__lists ul a:first-child {
+  background-color: var(--8019c8);
+  color: white;
+}
+.header__lists ul :not(:first-child) {
+  background-color: transparent;
+}
+.header__lists ul :active {
+  background-color: var(--8019c8);
+  color: #fff;
+}
+.header__lists ul :hover {
+  background-color: var(--8019c8);
+  color: #fff;
+}
+.header__logo {
+  font-size: 1.25rem;
+  line-height: inherit;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+.header__logo span {
+  font-weight: bold;
+  color: black;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.header__items a {
+  margin-left: 15px;
+  color: var(--8019c8);
+}
+
+@media screen and (max-width: 480px) {
+  .header .icon {
+    display: block;
+  }
+  .header__lists {
+    display: none;
+  }
+  .header__items {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
